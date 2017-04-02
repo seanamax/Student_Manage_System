@@ -19,8 +19,6 @@ namespace NaiNa {
         void init_db_connection_pool();
         test_init();
 
-
-
     // data
     private:
 

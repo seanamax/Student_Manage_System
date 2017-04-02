@@ -129,9 +129,33 @@ demo/test/CMakeFiles/test_demo.dir/__/db.cpp.o.provides: demo/test/CMakeFiles/te
 demo/test/CMakeFiles/test_demo.dir/__/db.cpp.o.provides.build: demo/test/CMakeFiles/test_demo.dir/__/db.cpp.o
 
 
+demo/test/CMakeFiles/test_demo.dir/__/db_connection_guard.cpp.o: demo/test/CMakeFiles/test_demo.dir/flags.make
+demo/test/CMakeFiles/test_demo.dir/__/db_connection_guard.cpp.o: ../demo/db_connection_guard.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/chris/Documents/MyGit/Student_Manage_System/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object demo/test/CMakeFiles/test_demo.dir/__/db_connection_guard.cpp.o"
+	cd /Users/chris/Documents/MyGit/Student_Manage_System/cmake-build-debug/demo/test && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test_demo.dir/__/db_connection_guard.cpp.o -c /Users/chris/Documents/MyGit/Student_Manage_System/demo/db_connection_guard.cpp
+
+demo/test/CMakeFiles/test_demo.dir/__/db_connection_guard.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test_demo.dir/__/db_connection_guard.cpp.i"
+	cd /Users/chris/Documents/MyGit/Student_Manage_System/cmake-build-debug/demo/test && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/chris/Documents/MyGit/Student_Manage_System/demo/db_connection_guard.cpp > CMakeFiles/test_demo.dir/__/db_connection_guard.cpp.i
+
+demo/test/CMakeFiles/test_demo.dir/__/db_connection_guard.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test_demo.dir/__/db_connection_guard.cpp.s"
+	cd /Users/chris/Documents/MyGit/Student_Manage_System/cmake-build-debug/demo/test && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/chris/Documents/MyGit/Student_Manage_System/demo/db_connection_guard.cpp -o CMakeFiles/test_demo.dir/__/db_connection_guard.cpp.s
+
+demo/test/CMakeFiles/test_demo.dir/__/db_connection_guard.cpp.o.requires:
+
+.PHONY : demo/test/CMakeFiles/test_demo.dir/__/db_connection_guard.cpp.o.requires
+
+demo/test/CMakeFiles/test_demo.dir/__/db_connection_guard.cpp.o.provides: demo/test/CMakeFiles/test_demo.dir/__/db_connection_guard.cpp.o.requires
+	$(MAKE) -f demo/test/CMakeFiles/test_demo.dir/build.make demo/test/CMakeFiles/test_demo.dir/__/db_connection_guard.cpp.o.provides.build
+.PHONY : demo/test/CMakeFiles/test_demo.dir/__/db_connection_guard.cpp.o.provides
+
+demo/test/CMakeFiles/test_demo.dir/__/db_connection_guard.cpp.o.provides.build: demo/test/CMakeFiles/test_demo.dir/__/db_connection_guard.cpp.o
+
+
 demo/test/CMakeFiles/test_demo.dir/threadsafe_stack_test.cpp.o: demo/test/CMakeFiles/test_demo.dir/flags.make
 demo/test/CMakeFiles/test_demo.dir/threadsafe_stack_test.cpp.o: ../demo/test/threadsafe_stack_test.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/chris/Documents/MyGit/Student_Manage_System/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object demo/test/CMakeFiles/test_demo.dir/threadsafe_stack_test.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/chris/Documents/MyGit/Student_Manage_System/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object demo/test/CMakeFiles/test_demo.dir/threadsafe_stack_test.cpp.o"
 	cd /Users/chris/Documents/MyGit/Student_Manage_System/cmake-build-debug/demo/test && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test_demo.dir/threadsafe_stack_test.cpp.o -c /Users/chris/Documents/MyGit/Student_Manage_System/demo/test/threadsafe_stack_test.cpp
 
 demo/test/CMakeFiles/test_demo.dir/threadsafe_stack_test.cpp.i: cmake_force
@@ -155,7 +179,7 @@ demo/test/CMakeFiles/test_demo.dir/threadsafe_stack_test.cpp.o.provides.build: d
 
 demo/test/CMakeFiles/test_demo.dir/db_test.cpp.o: demo/test/CMakeFiles/test_demo.dir/flags.make
 demo/test/CMakeFiles/test_demo.dir/db_test.cpp.o: ../demo/test/db_test.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/chris/Documents/MyGit/Student_Manage_System/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object demo/test/CMakeFiles/test_demo.dir/db_test.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/chris/Documents/MyGit/Student_Manage_System/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object demo/test/CMakeFiles/test_demo.dir/db_test.cpp.o"
 	cd /Users/chris/Documents/MyGit/Student_Manage_System/cmake-build-debug/demo/test && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test_demo.dir/db_test.cpp.o -c /Users/chris/Documents/MyGit/Student_Manage_System/demo/test/db_test.cpp
 
 demo/test/CMakeFiles/test_demo.dir/db_test.cpp.i: cmake_force
@@ -179,7 +203,7 @@ demo/test/CMakeFiles/test_demo.dir/db_test.cpp.o.provides.build: demo/test/CMake
 
 demo/test/CMakeFiles/test_demo.dir/db_connection_pool_test.cpp.o: demo/test/CMakeFiles/test_demo.dir/flags.make
 demo/test/CMakeFiles/test_demo.dir/db_connection_pool_test.cpp.o: ../demo/test/db_connection_pool_test.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/chris/Documents/MyGit/Student_Manage_System/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object demo/test/CMakeFiles/test_demo.dir/db_connection_pool_test.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/chris/Documents/MyGit/Student_Manage_System/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object demo/test/CMakeFiles/test_demo.dir/db_connection_pool_test.cpp.o"
 	cd /Users/chris/Documents/MyGit/Student_Manage_System/cmake-build-debug/demo/test && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test_demo.dir/db_connection_pool_test.cpp.o -c /Users/chris/Documents/MyGit/Student_Manage_System/demo/test/db_connection_pool_test.cpp
 
 demo/test/CMakeFiles/test_demo.dir/db_connection_pool_test.cpp.i: cmake_force
@@ -203,7 +227,7 @@ demo/test/CMakeFiles/test_demo.dir/db_connection_pool_test.cpp.o.provides.build:
 
 demo/test/CMakeFiles/test_demo.dir/user_test.cpp.o: demo/test/CMakeFiles/test_demo.dir/flags.make
 demo/test/CMakeFiles/test_demo.dir/user_test.cpp.o: ../demo/test/user_test.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/chris/Documents/MyGit/Student_Manage_System/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object demo/test/CMakeFiles/test_demo.dir/user_test.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/chris/Documents/MyGit/Student_Manage_System/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object demo/test/CMakeFiles/test_demo.dir/user_test.cpp.o"
 	cd /Users/chris/Documents/MyGit/Student_Manage_System/cmake-build-debug/demo/test && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test_demo.dir/user_test.cpp.o -c /Users/chris/Documents/MyGit/Student_Manage_System/demo/test/user_test.cpp
 
 demo/test/CMakeFiles/test_demo.dir/user_test.cpp.i: cmake_force
@@ -227,7 +251,7 @@ demo/test/CMakeFiles/test_demo.dir/user_test.cpp.o.provides.build: demo/test/CMa
 
 demo/test/CMakeFiles/test_demo.dir/__/user.cpp.o: demo/test/CMakeFiles/test_demo.dir/flags.make
 demo/test/CMakeFiles/test_demo.dir/__/user.cpp.o: ../demo/user.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/chris/Documents/MyGit/Student_Manage_System/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object demo/test/CMakeFiles/test_demo.dir/__/user.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/chris/Documents/MyGit/Student_Manage_System/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object demo/test/CMakeFiles/test_demo.dir/__/user.cpp.o"
 	cd /Users/chris/Documents/MyGit/Student_Manage_System/cmake-build-debug/demo/test && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test_demo.dir/__/user.cpp.o -c /Users/chris/Documents/MyGit/Student_Manage_System/demo/user.cpp
 
 demo/test/CMakeFiles/test_demo.dir/__/user.cpp.i: cmake_force
@@ -249,16 +273,42 @@ demo/test/CMakeFiles/test_demo.dir/__/user.cpp.o.provides: demo/test/CMakeFiles/
 demo/test/CMakeFiles/test_demo.dir/__/user.cpp.o.provides.build: demo/test/CMakeFiles/test_demo.dir/__/user.cpp.o
 
 
+demo/test/CMakeFiles/test_demo.dir/db_connection_guard_test.cpp.o: demo/test/CMakeFiles/test_demo.dir/flags.make
+demo/test/CMakeFiles/test_demo.dir/db_connection_guard_test.cpp.o: ../demo/test/db_connection_guard_test.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/chris/Documents/MyGit/Student_Manage_System/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object demo/test/CMakeFiles/test_demo.dir/db_connection_guard_test.cpp.o"
+	cd /Users/chris/Documents/MyGit/Student_Manage_System/cmake-build-debug/demo/test && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test_demo.dir/db_connection_guard_test.cpp.o -c /Users/chris/Documents/MyGit/Student_Manage_System/demo/test/db_connection_guard_test.cpp
+
+demo/test/CMakeFiles/test_demo.dir/db_connection_guard_test.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test_demo.dir/db_connection_guard_test.cpp.i"
+	cd /Users/chris/Documents/MyGit/Student_Manage_System/cmake-build-debug/demo/test && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/chris/Documents/MyGit/Student_Manage_System/demo/test/db_connection_guard_test.cpp > CMakeFiles/test_demo.dir/db_connection_guard_test.cpp.i
+
+demo/test/CMakeFiles/test_demo.dir/db_connection_guard_test.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test_demo.dir/db_connection_guard_test.cpp.s"
+	cd /Users/chris/Documents/MyGit/Student_Manage_System/cmake-build-debug/demo/test && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/chris/Documents/MyGit/Student_Manage_System/demo/test/db_connection_guard_test.cpp -o CMakeFiles/test_demo.dir/db_connection_guard_test.cpp.s
+
+demo/test/CMakeFiles/test_demo.dir/db_connection_guard_test.cpp.o.requires:
+
+.PHONY : demo/test/CMakeFiles/test_demo.dir/db_connection_guard_test.cpp.o.requires
+
+demo/test/CMakeFiles/test_demo.dir/db_connection_guard_test.cpp.o.provides: demo/test/CMakeFiles/test_demo.dir/db_connection_guard_test.cpp.o.requires
+	$(MAKE) -f demo/test/CMakeFiles/test_demo.dir/build.make demo/test/CMakeFiles/test_demo.dir/db_connection_guard_test.cpp.o.provides.build
+.PHONY : demo/test/CMakeFiles/test_demo.dir/db_connection_guard_test.cpp.o.provides
+
+demo/test/CMakeFiles/test_demo.dir/db_connection_guard_test.cpp.o.provides.build: demo/test/CMakeFiles/test_demo.dir/db_connection_guard_test.cpp.o
+
+
 # Object files for target test_demo
 test_demo_OBJECTS = \
 "CMakeFiles/test_demo.dir/test_init.cpp.o" \
 "CMakeFiles/test_demo.dir/__/db_connection_pool.cpp.o" \
 "CMakeFiles/test_demo.dir/__/db.cpp.o" \
+"CMakeFiles/test_demo.dir/__/db_connection_guard.cpp.o" \
 "CMakeFiles/test_demo.dir/threadsafe_stack_test.cpp.o" \
 "CMakeFiles/test_demo.dir/db_test.cpp.o" \
 "CMakeFiles/test_demo.dir/db_connection_pool_test.cpp.o" \
 "CMakeFiles/test_demo.dir/user_test.cpp.o" \
-"CMakeFiles/test_demo.dir/__/user.cpp.o"
+"CMakeFiles/test_demo.dir/__/user.cpp.o" \
+"CMakeFiles/test_demo.dir/db_connection_guard_test.cpp.o"
 
 # External object files for target test_demo
 test_demo_EXTERNAL_OBJECTS =
@@ -266,14 +316,16 @@ test_demo_EXTERNAL_OBJECTS =
 demo/test/test_demo: demo/test/CMakeFiles/test_demo.dir/test_init.cpp.o
 demo/test/test_demo: demo/test/CMakeFiles/test_demo.dir/__/db_connection_pool.cpp.o
 demo/test/test_demo: demo/test/CMakeFiles/test_demo.dir/__/db.cpp.o
+demo/test/test_demo: demo/test/CMakeFiles/test_demo.dir/__/db_connection_guard.cpp.o
 demo/test/test_demo: demo/test/CMakeFiles/test_demo.dir/threadsafe_stack_test.cpp.o
 demo/test/test_demo: demo/test/CMakeFiles/test_demo.dir/db_test.cpp.o
 demo/test/test_demo: demo/test/CMakeFiles/test_demo.dir/db_connection_pool_test.cpp.o
 demo/test/test_demo: demo/test/CMakeFiles/test_demo.dir/user_test.cpp.o
 demo/test/test_demo: demo/test/CMakeFiles/test_demo.dir/__/user.cpp.o
+demo/test/test_demo: demo/test/CMakeFiles/test_demo.dir/db_connection_guard_test.cpp.o
 demo/test/test_demo: demo/test/CMakeFiles/test_demo.dir/build.make
 demo/test/test_demo: demo/test/CMakeFiles/test_demo.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/chris/Documents/MyGit/Student_Manage_System/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX executable test_demo"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/chris/Documents/MyGit/Student_Manage_System/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX executable test_demo"
 	cd /Users/chris/Documents/MyGit/Student_Manage_System/cmake-build-debug/demo/test && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/test_demo.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -284,11 +336,13 @@ demo/test/CMakeFiles/test_demo.dir/build: demo/test/test_demo
 demo/test/CMakeFiles/test_demo.dir/requires: demo/test/CMakeFiles/test_demo.dir/test_init.cpp.o.requires
 demo/test/CMakeFiles/test_demo.dir/requires: demo/test/CMakeFiles/test_demo.dir/__/db_connection_pool.cpp.o.requires
 demo/test/CMakeFiles/test_demo.dir/requires: demo/test/CMakeFiles/test_demo.dir/__/db.cpp.o.requires
+demo/test/CMakeFiles/test_demo.dir/requires: demo/test/CMakeFiles/test_demo.dir/__/db_connection_guard.cpp.o.requires
 demo/test/CMakeFiles/test_demo.dir/requires: demo/test/CMakeFiles/test_demo.dir/threadsafe_stack_test.cpp.o.requires
 demo/test/CMakeFiles/test_demo.dir/requires: demo/test/CMakeFiles/test_demo.dir/db_test.cpp.o.requires
 demo/test/CMakeFiles/test_demo.dir/requires: demo/test/CMakeFiles/test_demo.dir/db_connection_pool_test.cpp.o.requires
 demo/test/CMakeFiles/test_demo.dir/requires: demo/test/CMakeFiles/test_demo.dir/user_test.cpp.o.requires
 demo/test/CMakeFiles/test_demo.dir/requires: demo/test/CMakeFiles/test_demo.dir/__/user.cpp.o.requires
+demo/test/CMakeFiles/test_demo.dir/requires: demo/test/CMakeFiles/test_demo.dir/db_connection_guard_test.cpp.o.requires
 
 .PHONY : demo/test/CMakeFiles/test_demo.dir/requires
 

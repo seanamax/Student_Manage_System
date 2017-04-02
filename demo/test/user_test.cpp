@@ -14,19 +14,8 @@ using namespace NaiNa;
 
 TEST(user_test, test_set)
 {
-//    test_init init;
-//    init.init();
-
-
-    string _db = "Student_Info";
-    string addr = "localhost";
-    port_type port = 3306;
-    string name = "root";
-    string passwd = "2718big.a";
-
-
-    bool init_flag = db_connection_pool::instance()->init(_db, addr, port, name, passwd,2,100);
-    EXPECT_EQ(init_flag, true);
+    shared_ptr<test_init> init(new test_init);
+    init->init();
 
     user u;
     string id = "Admin";
@@ -40,5 +29,44 @@ TEST(user_test, test_set)
 
 TEST(user_test, test_new_account_set)
 {
+    test_init init;
+    init.init();
 
+    user u;
+    string id = "nihao";
+    string passwd = "ahaha";
+    USER_STANDARD ustd = USER_STANDARD::STUDENT;
+
+    u.set_new_user(id, passwd, ustd);
+}
+
+TEST(user_test, test_update_passwd)
+{
+    test_init init;
+    init.init();
+
+    user u,v;
+    string id="nihaoa";
+    string origin_passwd = "ahaha";
+    string changed_passwd = "nihao";
+    u.set_new_user(id, origin_passwd, USER_STANDARD::TEANCHER);
+
+    u.update_passwd(origin_passwd, changed_passwd);
+    v.set("Admin");
+}
+
+TEST(user_test, test_check_passwd)
+{
+    test_init init;
+    init.init();
+
+    user u;
+    string id="Admin";
+    u.set(id);
+
+    bool update_passwd_flag = u.update_passwd("0", "buhao");
+    EXPECT_EQ(update_passwd_flag, true);
+
+//    user v;
+//    v.update_passwd("ni", "w");
 }

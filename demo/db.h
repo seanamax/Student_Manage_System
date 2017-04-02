@@ -13,6 +13,10 @@
 namespace NaiNa
 {
 
+    class db_SQL_query_error_exception : public std::exception {
+        const char* what() const noexcept { return "db_SQL_query_error_exception"; };
+    };
+
     class db
     {
     // function

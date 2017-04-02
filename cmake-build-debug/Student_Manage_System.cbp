@@ -94,10 +94,19 @@
 		<Unit filename="/Users/chris/Documents/MyGit/Student_Manage_System/demo/db.h">
 			<Option target="test_demo"/>
 		</Unit>
+		<Unit filename="/Users/chris/Documents/MyGit/Student_Manage_System/demo/db_connection_guard.cpp">
+			<Option target="test_demo"/>
+		</Unit>
+		<Unit filename="/Users/chris/Documents/MyGit/Student_Manage_System/demo/db_connection_guard.h">
+			<Option target="test_demo"/>
+		</Unit>
 		<Unit filename="/Users/chris/Documents/MyGit/Student_Manage_System/demo/db_connection_pool.cpp">
 			<Option target="test_demo"/>
 		</Unit>
 		<Unit filename="/Users/chris/Documents/MyGit/Student_Manage_System/demo/db_connection_pool.h">
+			<Option target="test_demo"/>
+		</Unit>
+		<Unit filename="/Users/chris/Documents/MyGit/Student_Manage_System/demo/test/db_connection_guard_test.cpp">
 			<Option target="test_demo"/>
 		</Unit>
 		<Unit filename="/Users/chris/Documents/MyGit/Student_Manage_System/demo/test/db_connection_pool_test.cpp">

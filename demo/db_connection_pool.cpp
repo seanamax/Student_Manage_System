@@ -9,17 +9,6 @@
 
 namespace NaiNa {
 
-    class db_init_exception : public std::exception {
-        const char* what() const noexcept { return "db_init_exception\n"; }
-        //explicit db_init_exception() {}
-        //explicit db_init_exception(char* str) {}
-    };
-
-    class db_connection_pool_no_connection_exception : public std::exception {
-        const char* what() const noexcept { return "db_connection_pool_no_connection_exception\n"; };
-    };
-
-
     db_connection_pool* db_connection_pool::instance() {
         static db_connection_pool db_con_pool;
         return &db_con_pool;

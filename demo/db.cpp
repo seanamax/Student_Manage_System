@@ -8,10 +8,6 @@
 
 namespace NaiNa
 {
-    class db_SQL_query_error_exception : public std::exception {
-        const char* what() const noexcept { return "db_SQL_query_error_exception"; };
-    };
-
 
     bool db::init(const std::string& db,
                   const std::string& address,
@@ -87,6 +83,7 @@ namespace NaiNa
         // mysql_query() 返回值非 零， 查询失败， 抛出异常
         if(mysql_query(&mysql_, que.c_str())) {
             throw db_SQL_query_error_exception();
+
         }
         std::shared_ptr<MYSQL_RES> res(mysql_store_result(&mysql_), mysql_free_result);
         return res;

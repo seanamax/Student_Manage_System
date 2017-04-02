@@ -11,14 +11,18 @@ link_directories(../../lib)
 INCLUDE_DIRECTORIES(/usr/local/mysql-5.7.17-macos10.12-x86_64/include)
 LINK_DIRECTORIES(/usr//local/mysql-5.7.17-macos10.12-x86_64/lib/)
 
-set(init_test test_init.cpp ../db_connection_pool.cpp ../db.cpp)
+set(init_test test_init.cpp ../db_connection_pool.cpp ../db.cpp ../db_connection_guard.cpp)
 set(threadsafe_stack_test threadsafe_stack_test.cpp)
 set(db_test db_test.cpp ../db.cpp)
 set(db_connection_pool_test db_connection_pool_test.cpp ../db_connection_pool.cpp ../db.cpp)
-set(user_test user_test.cpp ../db_connection_pool.cpp ../db.cpp ../user.cpp)
+set(user_test user_test.cpp ${init_test} ../user.cpp)
+set(db_connection_guard_test db_connection_guard_test.cpp ${init_test})
+
+set(exec_target ${init_test} ${threadsafe_stack_test}
+        ${db_test} ${db_connection_pool_test}
+        ${user_test} ${db_connection_guard_test})
 
 
-set(exec_target ${init_test} ${threadsafe_stack_test} ${db_test} ${db_connection_pool_test} ${user_test})
 add_executable(test_demo ${exec_target})
 
 target_link_libraries(test_demo libgtest.a libgtest_main.a)

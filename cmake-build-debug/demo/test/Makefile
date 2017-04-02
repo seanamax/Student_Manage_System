@@ -152,6 +152,33 @@ __/db.cpp.s:
 	cd /Users/chris/Documents/MyGit/Student_Manage_System/cmake-build-debug && $(MAKE) -f demo/test/CMakeFiles/test_demo.dir/build.make demo/test/CMakeFiles/test_demo.dir/__/db.cpp.s
 .PHONY : __/db.cpp.s
 
+__/db_connection_guard.o: __/db_connection_guard.cpp.o
+
+.PHONY : __/db_connection_guard.o
+
+# target to build an object file
+__/db_connection_guard.cpp.o:
+	cd /Users/chris/Documents/MyGit/Student_Manage_System/cmake-build-debug && $(MAKE) -f demo/test/CMakeFiles/test_demo.dir/build.make demo/test/CMakeFiles/test_demo.dir/__/db_connection_guard.cpp.o
+.PHONY : __/db_connection_guard.cpp.o
+
+__/db_connection_guard.i: __/db_connection_guard.cpp.i
+
+.PHONY : __/db_connection_guard.i
+
+# target to preprocess a source file
+__/db_connection_guard.cpp.i:
+	cd /Users/chris/Documents/MyGit/Student_Manage_System/cmake-build-debug && $(MAKE) -f demo/test/CMakeFiles/test_demo.dir/build.make demo/test/CMakeFiles/test_demo.dir/__/db_connection_guard.cpp.i
+.PHONY : __/db_connection_guard.cpp.i
+
+__/db_connection_guard.s: __/db_connection_guard.cpp.s
+
+.PHONY : __/db_connection_guard.s
+
+# target to generate assembly for a file
+__/db_connection_guard.cpp.s:
+	cd /Users/chris/Documents/MyGit/Student_Manage_System/cmake-build-debug && $(MAKE) -f demo/test/CMakeFiles/test_demo.dir/build.make demo/test/CMakeFiles/test_demo.dir/__/db_connection_guard.cpp.s
+.PHONY : __/db_connection_guard.cpp.s
+
 __/db_connection_pool.o: __/db_connection_pool.cpp.o
 
 .PHONY : __/db_connection_pool.o
@@ -205,6 +232,33 @@ __/user.s: __/user.cpp.s
 __/user.cpp.s:
 	cd /Users/chris/Documents/MyGit/Student_Manage_System/cmake-build-debug && $(MAKE) -f demo/test/CMakeFiles/test_demo.dir/build.make demo/test/CMakeFiles/test_demo.dir/__/user.cpp.s
 .PHONY : __/user.cpp.s
+
+db_connection_guard_test.o: db_connection_guard_test.cpp.o
+
+.PHONY : db_connection_guard_test.o
+
+# target to build an object file
+db_connection_guard_test.cpp.o:
+	cd /Users/chris/Documents/MyGit/Student_Manage_System/cmake-build-debug && $(MAKE) -f demo/test/CMakeFiles/test_demo.dir/build.make demo/test/CMakeFiles/test_demo.dir/db_connection_guard_test.cpp.o
+.PHONY : db_connection_guard_test.cpp.o
+
+db_connection_guard_test.i: db_connection_guard_test.cpp.i
+
+.PHONY : db_connection_guard_test.i
+
+# target to preprocess a source file
+db_connection_guard_test.cpp.i:
+	cd /Users/chris/Documents/MyGit/Student_Manage_System/cmake-build-debug && $(MAKE) -f demo/test/CMakeFiles/test_demo.dir/build.make demo/test/CMakeFiles/test_demo.dir/db_connection_guard_test.cpp.i
+.PHONY : db_connection_guard_test.cpp.i
+
+db_connection_guard_test.s: db_connection_guard_test.cpp.s
+
+.PHONY : db_connection_guard_test.s
+
+# target to generate assembly for a file
+db_connection_guard_test.cpp.s:
+	cd /Users/chris/Documents/MyGit/Student_Manage_System/cmake-build-debug && $(MAKE) -f demo/test/CMakeFiles/test_demo.dir/build.make demo/test/CMakeFiles/test_demo.dir/db_connection_guard_test.cpp.s
+.PHONY : db_connection_guard_test.cpp.s
 
 db_connection_pool_test.o: db_connection_pool_test.cpp.o
 
@@ -353,12 +407,18 @@ help:
 	@echo "... __/db.o"
 	@echo "... __/db.i"
 	@echo "... __/db.s"
+	@echo "... __/db_connection_guard.o"
+	@echo "... __/db_connection_guard.i"
+	@echo "... __/db_connection_guard.s"
 	@echo "... __/db_connection_pool.o"
 	@echo "... __/db_connection_pool.i"
 	@echo "... __/db_connection_pool.s"
 	@echo "... __/user.o"
 	@echo "... __/user.i"
 	@echo "... __/user.s"
+	@echo "... db_connection_guard_test.o"
+	@echo "... db_connection_guard_test.i"
+	@echo "... db_connection_guard_test.s"
 	@echo "... db_connection_pool_test.o"
 	@echo "... db_connection_pool_test.i"
 	@echo "... db_connection_pool_test.s"

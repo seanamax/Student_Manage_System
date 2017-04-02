@@ -5,8 +5,10 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
   "/Users/chris/Documents/MyGit/Student_Manage_System/demo/db.cpp" "/Users/chris/Documents/MyGit/Student_Manage_System/cmake-build-debug/demo/test/CMakeFiles/test_demo.dir/__/db.cpp.o"
+  "/Users/chris/Documents/MyGit/Student_Manage_System/demo/db_connection_guard.cpp" "/Users/chris/Documents/MyGit/Student_Manage_System/cmake-build-debug/demo/test/CMakeFiles/test_demo.dir/__/db_connection_guard.cpp.o"
   "/Users/chris/Documents/MyGit/Student_Manage_System/demo/db_connection_pool.cpp" "/Users/chris/Documents/MyGit/Student_Manage_System/cmake-build-debug/demo/test/CMakeFiles/test_demo.dir/__/db_connection_pool.cpp.o"
   "/Users/chris/Documents/MyGit/Student_Manage_System/demo/user.cpp" "/Users/chris/Documents/MyGit/Student_Manage_System/cmake-build-debug/demo/test/CMakeFiles/test_demo.dir/__/user.cpp.o"
+  "/Users/chris/Documents/MyGit/Student_Manage_System/demo/test/db_connection_guard_test.cpp" "/Users/chris/Documents/MyGit/Student_Manage_System/cmake-build-debug/demo/test/CMakeFiles/test_demo.dir/db_connection_guard_test.cpp.o"
   "/Users/chris/Documents/MyGit/Student_Manage_System/demo/test/db_connection_pool_test.cpp" "/Users/chris/Documents/MyGit/Student_Manage_System/cmake-build-debug/demo/test/CMakeFiles/test_demo.dir/db_connection_pool_test.cpp.o"
   "/Users/chris/Documents/MyGit/Student_Manage_System/demo/test/db_test.cpp" "/Users/chris/Documents/MyGit/Student_Manage_System/cmake-build-debug/demo/test/CMakeFiles/test_demo.dir/db_test.cpp.o"
   "/Users/chris/Documents/MyGit/Student_Manage_System/demo/test/test_init.cpp" "/Users/chris/Documents/MyGit/Student_Manage_System/cmake-build-debug/demo/test/CMakeFiles/test_demo.dir/test_init.cpp.o"
