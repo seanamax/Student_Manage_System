@@ -1,7 +1,7 @@
-/Users/chris/Documents/MyGit/Student_Manage_System/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/Users/chris/Documents/MyGit/Student_Manage_System/cmake-build-debug/CMakeFiles/edit_cache.dir
-/Users/chris/Documents/MyGit/Student_Manage_System/cmake-build-debug/demo/CMakeFiles/rebuild_cache.dir
-/Users/chris/Documents/MyGit/Student_Manage_System/cmake-build-debug/demo/CMakeFiles/edit_cache.dir
-/Users/chris/Documents/MyGit/Student_Manage_System/cmake-build-debug/demo/test/CMakeFiles/rebuild_cache.dir
-/Users/chris/Documents/MyGit/Student_Manage_System/cmake-build-debug/demo/test/CMakeFiles/edit_cache.dir
-/Users/chris/Documents/MyGit/Student_Manage_System/cmake-build-debug/demo/test/CMakeFiles/test_demo.dir
+/home/chris/Documents/Code/Student_Manage_System/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/chris/Documents/Code/Student_Manage_System/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/chris/Documents/Code/Student_Manage_System/cmake-build-debug/demo/CMakeFiles/rebuild_cache.dir
+/home/chris/Documents/Code/Student_Manage_System/cmake-build-debug/demo/CMakeFiles/edit_cache.dir
+/home/chris/Documents/Code/Student_Manage_System/cmake-build-debug/demo/test/CMakeFiles/rebuild_cache.dir
+/home/chris/Documents/Code/Student_Manage_System/cmake-build-debug/demo/test/CMakeFiles/edit_cache.dir
+/home/chris/Documents/Code/Student_Manage_System/cmake-build-debug/demo/test/CMakeFiles/test_demo.dir

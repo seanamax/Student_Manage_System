@@ -15,7 +15,7 @@
 namespace NaiNa
 {
     // 加锁操作， 因为返回用户等级过程中，有可能被修改。
-    bool user::check_user_standard(const USER_STANDARD &ustd) const {
+    bool user::check_user_standard(const USER_STANDARD &ustd) {
         std::lock_guard<std::mutex> lock_guard(m_);
         if(!account_update_from_db_) {
             throw account_unset_exception();
@@ -25,7 +25,7 @@ namespace NaiNa
     }
 
     // 加锁操作， 因为检查密码过程中，有可能被修改。
-    bool user::check_passwd(const std::string& passwd) const {
+    bool user::check_passwd(const std::string& passwd) {
         std::lock_guard<std::mutex> lock(m_);
         if(!account_update_from_db_) {
             throw account_unset_exception();
@@ -35,7 +35,7 @@ namespace NaiNa
     }
 
     // 加锁操作， 返回用户等级过程中，有可能被修改
-    const USER_STANDARD user::user_standard() const {
+    const USER_STANDARD user::user_standard() {
         std::lock_guard<std::mutex> lock(m_);
         if(!account_update_from_db_) {
             throw account_unset_exception();
@@ -45,7 +45,7 @@ namespace NaiNa
     }
 
     // 加锁操作， 返回用户id，有可能被修改
-    const std::string& user::id() const {
+    const std::string& user::id() {
         std::lock_guard<std::mutex> lock(m_);
         if(!account_update_from_db_) {
             throw account_unset_exception();

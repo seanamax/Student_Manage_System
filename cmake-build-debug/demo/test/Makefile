@@ -39,19 +39,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /Applications/CLion.app/Contents/bin/cmake/bin/cmake
+CMAKE_COMMAND = /home/chris/Applications/clion-2017.1/bin/cmake/bin/cmake
 
 # The command to remove a file.
-RM = /Applications/CLion.app/Contents/bin/cmake/bin/cmake -E remove -f
+RM = /home/chris/Applications/clion-2017.1/bin/cmake/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/chris/Documents/MyGit/Student_Manage_System
+CMAKE_SOURCE_DIR = /home/chris/Documents/Code/Student_Manage_System
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/chris/Documents/MyGit/Student_Manage_System/cmake-build-debug
+CMAKE_BINARY_DIR = /home/chris/Documents/Code/Student_Manage_System/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -59,7 +59,7 @@ CMAKE_BINARY_DIR = /Users/chris/Documents/MyGit/Student_Manage_System/cmake-buil
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/Applications/CLion.app/Contents/bin/cmake/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/home/chris/Applications/clion-2017.1/bin/cmake/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -70,7 +70,7 @@ rebuild_cache/fast: rebuild_cache
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/Applications/CLion.app/Contents/bin/cmake/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/home/chris/Applications/clion-2017.1/bin/cmake/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -80,14 +80,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /Users/chris/Documents/MyGit/Student_Manage_System/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start /Users/chris/Documents/MyGit/Student_Manage_System/cmake-build-debug/CMakeFiles /Users/chris/Documents/MyGit/Student_Manage_System/cmake-build-debug/demo/test/CMakeFiles/progress.marks
-	cd /Users/chris/Documents/MyGit/Student_Manage_System/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 demo/test/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/chris/Documents/MyGit/Student_Manage_System/cmake-build-debug/CMakeFiles 0
+	cd /home/chris/Documents/Code/Student_Manage_System/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start /home/chris/Documents/Code/Student_Manage_System/cmake-build-debug/CMakeFiles /home/chris/Documents/Code/Student_Manage_System/cmake-build-debug/demo/test/CMakeFiles/progress.marks
+	cd /home/chris/Documents/Code/Student_Manage_System/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 demo/test/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/chris/Documents/Code/Student_Manage_System/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /Users/chris/Documents/MyGit/Student_Manage_System/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 demo/test/clean
+	cd /home/chris/Documents/Code/Student_Manage_System/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 demo/test/clean
 .PHONY : clean
 
 # The main clean target
@@ -97,22 +97,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /Users/chris/Documents/MyGit/Student_Manage_System/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 demo/test/preinstall
+	cd /home/chris/Documents/Code/Student_Manage_System/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 demo/test/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /Users/chris/Documents/MyGit/Student_Manage_System/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 demo/test/preinstall
+	cd /home/chris/Documents/Code/Student_Manage_System/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 demo/test/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /Users/chris/Documents/MyGit/Student_Manage_System/cmake-build-debug && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/chris/Documents/Code/Student_Manage_System/cmake-build-debug && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 demo/test/CMakeFiles/test_demo.dir/rule:
-	cd /Users/chris/Documents/MyGit/Student_Manage_System/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 demo/test/CMakeFiles/test_demo.dir/rule
+	cd /home/chris/Documents/Code/Student_Manage_System/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 demo/test/CMakeFiles/test_demo.dir/rule
 .PHONY : demo/test/CMakeFiles/test_demo.dir/rule
 
 # Convenience name for target.
@@ -122,7 +122,7 @@ test_demo: demo/test/CMakeFiles/test_demo.dir/rule
 
 # fast build rule for target.
 test_demo/fast:
-	cd /Users/chris/Documents/MyGit/Student_Manage_System/cmake-build-debug && $(MAKE) -f demo/test/CMakeFiles/test_demo.dir/build.make demo/test/CMakeFiles/test_demo.dir/build
+	cd /home/chris/Documents/Code/Student_Manage_System/cmake-build-debug && $(MAKE) -f demo/test/CMakeFiles/test_demo.dir/build.make demo/test/CMakeFiles/test_demo.dir/build
 .PHONY : test_demo/fast
 
 __/db.o: __/db.cpp.o
@@ -131,7 +131,7 @@ __/db.o: __/db.cpp.o
 
 # target to build an object file
 __/db.cpp.o:
-	cd /Users/chris/Documents/MyGit/Student_Manage_System/cmake-build-debug && $(MAKE) -f demo/test/CMakeFiles/test_demo.dir/build.make demo/test/CMakeFiles/test_demo.dir/__/db.cpp.o
+	cd /home/chris/Documents/Code/Student_Manage_System/cmake-build-debug && $(MAKE) -f demo/test/CMakeFiles/test_demo.dir/build.make demo/test/CMakeFiles/test_demo.dir/__/db.cpp.o
 .PHONY : __/db.cpp.o
 
 __/db.i: __/db.cpp.i
@@ -140,7 +140,7 @@ __/db.i: __/db.cpp.i
 
 # target to preprocess a source file
 __/db.cpp.i:
-	cd /Users/chris/Documents/MyGit/Student_Manage_System/cmake-build-debug && $(MAKE) -f demo/test/CMakeFiles/test_demo.dir/build.make demo/test/CMakeFiles/test_demo.dir/__/db.cpp.i
+	cd /home/chris/Documents/Code/Student_Manage_System/cmake-build-debug && $(MAKE) -f demo/test/CMakeFiles/test_demo.dir/build.make demo/test/CMakeFiles/test_demo.dir/__/db.cpp.i
 .PHONY : __/db.cpp.i
 
 __/db.s: __/db.cpp.s
@@ -149,7 +149,7 @@ __/db.s: __/db.cpp.s
 
 # target to generate assembly for a file
 __/db.cpp.s:
-	cd /Users/chris/Documents/MyGit/Student_Manage_System/cmake-build-debug && $(MAKE) -f demo/test/CMakeFiles/test_demo.dir/build.make demo/test/CMakeFiles/test_demo.dir/__/db.cpp.s
+	cd /home/chris/Documents/Code/Student_Manage_System/cmake-build-debug && $(MAKE) -f demo/test/CMakeFiles/test_demo.dir/build.make demo/test/CMakeFiles/test_demo.dir/__/db.cpp.s
 .PHONY : __/db.cpp.s
 
 __/db_connection_guard.o: __/db_connection_guard.cpp.o
@@ -158,7 +158,7 @@ __/db_connection_guard.o: __/db_connection_guard.cpp.o
 
 # target to build an object file
 __/db_connection_guard.cpp.o:
-	cd /Users/chris/Documents/MyGit/Student_Manage_System/cmake-build-debug && $(MAKE) -f demo/test/CMakeFiles/test_demo.dir/build.make demo/test/CMakeFiles/test_demo.dir/__/db_connection_guard.cpp.o
+	cd /home/chris/Documents/Code/Student_Manage_System/cmake-build-debug && $(MAKE) -f demo/test/CMakeFiles/test_demo.dir/build.make demo/test/CMakeFiles/test_demo.dir/__/db_connection_guard.cpp.o
 .PHONY : __/db_connection_guard.cpp.o
 
 __/db_connection_guard.i: __/db_connection_guard.cpp.i
@@ -167,7 +167,7 @@ __/db_connection_guard.i: __/db_connection_guard.cpp.i
 
 # target to preprocess a source file
 __/db_connection_guard.cpp.i:
-	cd /Users/chris/Documents/MyGit/Student_Manage_System/cmake-build-debug && $(MAKE) -f demo/test/CMakeFiles/test_demo.dir/build.make demo/test/CMakeFiles/test_demo.dir/__/db_connection_guard.cpp.i
+	cd /home/chris/Documents/Code/Student_Manage_System/cmake-build-debug && $(MAKE) -f demo/test/CMakeFiles/test_demo.dir/build.make demo/test/CMakeFiles/test_demo.dir/__/db_connection_guard.cpp.i
 .PHONY : __/db_connection_guard.cpp.i
 
 __/db_connection_guard.s: __/db_connection_guard.cpp.s
@@ -176,7 +176,7 @@ __/db_connection_guard.s: __/db_connection_guard.cpp.s
 
 # target to generate assembly for a file
 __/db_connection_guard.cpp.s:
-	cd /Users/chris/Documents/MyGit/Student_Manage_System/cmake-build-debug && $(MAKE) -f demo/test/CMakeFiles/test_demo.dir/build.make demo/test/CMakeFiles/test_demo.dir/__/db_connection_guard.cpp.s
+	cd /home/chris/Documents/Code/Student_Manage_System/cmake-build-debug && $(MAKE) -f demo/test/CMakeFiles/test_demo.dir/build.make demo/test/CMakeFiles/test_demo.dir/__/db_connection_guard.cpp.s
 .PHONY : __/db_connection_guard.cpp.s
 
 __/db_connection_pool.o: __/db_connection_pool.cpp.o
@@ -185,7 +185,7 @@ __/db_connection_pool.o: __/db_connection_pool.cpp.o
 
 # target to build an object file
 __/db_connection_pool.cpp.o:
-	cd /Users/chris/Documents/MyGit/Student_Manage_System/cmake-build-debug && $(MAKE) -f demo/test/CMakeFiles/test_demo.dir/build.make demo/test/CMakeFiles/test_demo.dir/__/db_connection_pool.cpp.o
+	cd /home/chris/Documents/Code/Student_Manage_System/cmake-build-debug && $(MAKE) -f demo/test/CMakeFiles/test_demo.dir/build.make demo/test/CMakeFiles/test_demo.dir/__/db_connection_pool.cpp.o
 .PHONY : __/db_connection_pool.cpp.o
 
 __/db_connection_pool.i: __/db_connection_pool.cpp.i
@@ -194,7 +194,7 @@ __/db_connection_pool.i: __/db_connection_pool.cpp.i
 
 # target to preprocess a source file
 __/db_connection_pool.cpp.i:
-	cd /Users/chris/Documents/MyGit/Student_Manage_System/cmake-build-debug && $(MAKE) -f demo/test/CMakeFiles/test_demo.dir/build.make demo/test/CMakeFiles/test_demo.dir/__/db_connection_pool.cpp.i
+	cd /home/chris/Documents/Code/Student_Manage_System/cmake-build-debug && $(MAKE) -f demo/test/CMakeFiles/test_demo.dir/build.make demo/test/CMakeFiles/test_demo.dir/__/db_connection_pool.cpp.i
 .PHONY : __/db_connection_pool.cpp.i
 
 __/db_connection_pool.s: __/db_connection_pool.cpp.s
@@ -203,7 +203,7 @@ __/db_connection_pool.s: __/db_connection_pool.cpp.s
 
 # target to generate assembly for a file
 __/db_connection_pool.cpp.s:
-	cd /Users/chris/Documents/MyGit/Student_Manage_System/cmake-build-debug && $(MAKE) -f demo/test/CMakeFiles/test_demo.dir/build.make demo/test/CMakeFiles/test_demo.dir/__/db_connection_pool.cpp.s
+	cd /home/chris/Documents/Code/Student_Manage_System/cmake-build-debug && $(MAKE) -f demo/test/CMakeFiles/test_demo.dir/build.make demo/test/CMakeFiles/test_demo.dir/__/db_connection_pool.cpp.s
 .PHONY : __/db_connection_pool.cpp.s
 
 __/user.o: __/user.cpp.o
@@ -212,7 +212,7 @@ __/user.o: __/user.cpp.o
 
 # target to build an object file
 __/user.cpp.o:
-	cd /Users/chris/Documents/MyGit/Student_Manage_System/cmake-build-debug && $(MAKE) -f demo/test/CMakeFiles/test_demo.dir/build.make demo/test/CMakeFiles/test_demo.dir/__/user.cpp.o
+	cd /home/chris/Documents/Code/Student_Manage_System/cmake-build-debug && $(MAKE) -f demo/test/CMakeFiles/test_demo.dir/build.make demo/test/CMakeFiles/test_demo.dir/__/user.cpp.o
 .PHONY : __/user.cpp.o
 
 __/user.i: __/user.cpp.i
@@ -221,7 +221,7 @@ __/user.i: __/user.cpp.i
 
 # target to preprocess a source file
 __/user.cpp.i:
-	cd /Users/chris/Documents/MyGit/Student_Manage_System/cmake-build-debug && $(MAKE) -f demo/test/CMakeFiles/test_demo.dir/build.make demo/test/CMakeFiles/test_demo.dir/__/user.cpp.i
+	cd /home/chris/Documents/Code/Student_Manage_System/cmake-build-debug && $(MAKE) -f demo/test/CMakeFiles/test_demo.dir/build.make demo/test/CMakeFiles/test_demo.dir/__/user.cpp.i
 .PHONY : __/user.cpp.i
 
 __/user.s: __/user.cpp.s
@@ -230,7 +230,7 @@ __/user.s: __/user.cpp.s
 
 # target to generate assembly for a file
 __/user.cpp.s:
-	cd /Users/chris/Documents/MyGit/Student_Manage_System/cmake-build-debug && $(MAKE) -f demo/test/CMakeFiles/test_demo.dir/build.make demo/test/CMakeFiles/test_demo.dir/__/user.cpp.s
+	cd /home/chris/Documents/Code/Student_Manage_System/cmake-build-debug && $(MAKE) -f demo/test/CMakeFiles/test_demo.dir/build.make demo/test/CMakeFiles/test_demo.dir/__/user.cpp.s
 .PHONY : __/user.cpp.s
 
 db_connection_guard_test.o: db_connection_guard_test.cpp.o
@@ -239,7 +239,7 @@ db_connection_guard_test.o: db_connection_guard_test.cpp.o
 
 # target to build an object file
 db_connection_guard_test.cpp.o:
-	cd /Users/chris/Documents/MyGit/Student_Manage_System/cmake-build-debug && $(MAKE) -f demo/test/CMakeFiles/test_demo.dir/build.make demo/test/CMakeFiles/test_demo.dir/db_connection_guard_test.cpp.o
+	cd /home/chris/Documents/Code/Student_Manage_System/cmake-build-debug && $(MAKE) -f demo/test/CMakeFiles/test_demo.dir/build.make demo/test/CMakeFiles/test_demo.dir/db_connection_guard_test.cpp.o
 .PHONY : db_connection_guard_test.cpp.o
 
 db_connection_guard_test.i: db_connection_guard_test.cpp.i
@@ -248,7 +248,7 @@ db_connection_guard_test.i: db_connection_guard_test.cpp.i
 
 # target to preprocess a source file
 db_connection_guard_test.cpp.i:
-	cd /Users/chris/Documents/MyGit/Student_Manage_System/cmake-build-debug && $(MAKE) -f demo/test/CMakeFiles/test_demo.dir/build.make demo/test/CMakeFiles/test_demo.dir/db_connection_guard_test.cpp.i
+	cd /home/chris/Documents/Code/Student_Manage_System/cmake-build-debug && $(MAKE) -f demo/test/CMakeFiles/test_demo.dir/build.make demo/test/CMakeFiles/test_demo.dir/db_connection_guard_test.cpp.i
 .PHONY : db_connection_guard_test.cpp.i
 
 db_connection_guard_test.s: db_connection_guard_test.cpp.s
@@ -257,7 +257,7 @@ db_connection_guard_test.s: db_connection_guard_test.cpp.s
 
 # target to generate assembly for a file
 db_connection_guard_test.cpp.s:
-	cd /Users/chris/Documents/MyGit/Student_Manage_System/cmake-build-debug && $(MAKE) -f demo/test/CMakeFiles/test_demo.dir/build.make demo/test/CMakeFiles/test_demo.dir/db_connection_guard_test.cpp.s
+	cd /home/chris/Documents/Code/Student_Manage_System/cmake-build-debug && $(MAKE) -f demo/test/CMakeFiles/test_demo.dir/build.make demo/test/CMakeFiles/test_demo.dir/db_connection_guard_test.cpp.s
 .PHONY : db_connection_guard_test.cpp.s
 
 db_connection_pool_test.o: db_connection_pool_test.cpp.o
@@ -266,7 +266,7 @@ db_connection_pool_test.o: db_connection_pool_test.cpp.o
 
 # target to build an object file
 db_connection_pool_test.cpp.o:
-	cd /Users/chris/Documents/MyGit/Student_Manage_System/cmake-build-debug && $(MAKE) -f demo/test/CMakeFiles/test_demo.dir/build.make demo/test/CMakeFiles/test_demo.dir/db_connection_pool_test.cpp.o
+	cd /home/chris/Documents/Code/Student_Manage_System/cmake-build-debug && $(MAKE) -f demo/test/CMakeFiles/test_demo.dir/build.make demo/test/CMakeFiles/test_demo.dir/db_connection_pool_test.cpp.o
 .PHONY : db_connection_pool_test.cpp.o
 
 db_connection_pool_test.i: db_connection_pool_test.cpp.i
@@ -275,7 +275,7 @@ db_connection_pool_test.i: db_connection_pool_test.cpp.i
 
 # target to preprocess a source file
 db_connection_pool_test.cpp.i:
-	cd /Users/chris/Documents/MyGit/Student_Manage_System/cmake-build-debug && $(MAKE) -f demo/test/CMakeFiles/test_demo.dir/build.make demo/test/CMakeFiles/test_demo.dir/db_connection_pool_test.cpp.i
+	cd /home/chris/Documents/Code/Student_Manage_System/cmake-build-debug && $(MAKE) -f demo/test/CMakeFiles/test_demo.dir/build.make demo/test/CMakeFiles/test_demo.dir/db_connection_pool_test.cpp.i
 .PHONY : db_connection_pool_test.cpp.i
 
 db_connection_pool_test.s: db_connection_pool_test.cpp.s
@@ -284,7 +284,7 @@ db_connection_pool_test.s: db_connection_pool_test.cpp.s
 
 # target to generate assembly for a file
 db_connection_pool_test.cpp.s:
-	cd /Users/chris/Documents/MyGit/Student_Manage_System/cmake-build-debug && $(MAKE) -f demo/test/CMakeFiles/test_demo.dir/build.make demo/test/CMakeFiles/test_demo.dir/db_connection_pool_test.cpp.s
+	cd /home/chris/Documents/Code/Student_Manage_System/cmake-build-debug && $(MAKE) -f demo/test/CMakeFiles/test_demo.dir/build.make demo/test/CMakeFiles/test_demo.dir/db_connection_pool_test.cpp.s
 .PHONY : db_connection_pool_test.cpp.s
 
 db_test.o: db_test.cpp.o
@@ -293,7 +293,7 @@ db_test.o: db_test.cpp.o
 
 # target to build an object file
 db_test.cpp.o:
-	cd /Users/chris/Documents/MyGit/Student_Manage_System/cmake-build-debug && $(MAKE) -f demo/test/CMakeFiles/test_demo.dir/build.make demo/test/CMakeFiles/test_demo.dir/db_test.cpp.o
+	cd /home/chris/Documents/Code/Student_Manage_System/cmake-build-debug && $(MAKE) -f demo/test/CMakeFiles/test_demo.dir/build.make demo/test/CMakeFiles/test_demo.dir/db_test.cpp.o
 .PHONY : db_test.cpp.o
 
 db_test.i: db_test.cpp.i
@@ -302,7 +302,7 @@ db_test.i: db_test.cpp.i
 
 # target to preprocess a source file
 db_test.cpp.i:
-	cd /Users/chris/Documents/MyGit/Student_Manage_System/cmake-build-debug && $(MAKE) -f demo/test/CMakeFiles/test_demo.dir/build.make demo/test/CMakeFiles/test_demo.dir/db_test.cpp.i
+	cd /home/chris/Documents/Code/Student_Manage_System/cmake-build-debug && $(MAKE) -f demo/test/CMakeFiles/test_demo.dir/build.make demo/test/CMakeFiles/test_demo.dir/db_test.cpp.i
 .PHONY : db_test.cpp.i
 
 db_test.s: db_test.cpp.s
@@ -311,7 +311,7 @@ db_test.s: db_test.cpp.s
 
 # target to generate assembly for a file
 db_test.cpp.s:
-	cd /Users/chris/Documents/MyGit/Student_Manage_System/cmake-build-debug && $(MAKE) -f demo/test/CMakeFiles/test_demo.dir/build.make demo/test/CMakeFiles/test_demo.dir/db_test.cpp.s
+	cd /home/chris/Documents/Code/Student_Manage_System/cmake-build-debug && $(MAKE) -f demo/test/CMakeFiles/test_demo.dir/build.make demo/test/CMakeFiles/test_demo.dir/db_test.cpp.s
 .PHONY : db_test.cpp.s
 
 test_init.o: test_init.cpp.o
@@ -320,7 +320,7 @@ test_init.o: test_init.cpp.o
 
 # target to build an object file
 test_init.cpp.o:
-	cd /Users/chris/Documents/MyGit/Student_Manage_System/cmake-build-debug && $(MAKE) -f demo/test/CMakeFiles/test_demo.dir/build.make demo/test/CMakeFiles/test_demo.dir/test_init.cpp.o
+	cd /home/chris/Documents/Code/Student_Manage_System/cmake-build-debug && $(MAKE) -f demo/test/CMakeFiles/test_demo.dir/build.make demo/test/CMakeFiles/test_demo.dir/test_init.cpp.o
 .PHONY : test_init.cpp.o
 
 test_init.i: test_init.cpp.i
@@ -329,7 +329,7 @@ test_init.i: test_init.cpp.i
 
 # target to preprocess a source file
 test_init.cpp.i:
-	cd /Users/chris/Documents/MyGit/Student_Manage_System/cmake-build-debug && $(MAKE) -f demo/test/CMakeFiles/test_demo.dir/build.make demo/test/CMakeFiles/test_demo.dir/test_init.cpp.i
+	cd /home/chris/Documents/Code/Student_Manage_System/cmake-build-debug && $(MAKE) -f demo/test/CMakeFiles/test_demo.dir/build.make demo/test/CMakeFiles/test_demo.dir/test_init.cpp.i
 .PHONY : test_init.cpp.i
 
 test_init.s: test_init.cpp.s
@@ -338,7 +338,7 @@ test_init.s: test_init.cpp.s
 
 # target to generate assembly for a file
 test_init.cpp.s:
-	cd /Users/chris/Documents/MyGit/Student_Manage_System/cmake-build-debug && $(MAKE) -f demo/test/CMakeFiles/test_demo.dir/build.make demo/test/CMakeFiles/test_demo.dir/test_init.cpp.s
+	cd /home/chris/Documents/Code/Student_Manage_System/cmake-build-debug && $(MAKE) -f demo/test/CMakeFiles/test_demo.dir/build.make demo/test/CMakeFiles/test_demo.dir/test_init.cpp.s
 .PHONY : test_init.cpp.s
 
 threadsafe_stack_test.o: threadsafe_stack_test.cpp.o
@@ -347,7 +347,7 @@ threadsafe_stack_test.o: threadsafe_stack_test.cpp.o
 
 # target to build an object file
 threadsafe_stack_test.cpp.o:
-	cd /Users/chris/Documents/MyGit/Student_Manage_System/cmake-build-debug && $(MAKE) -f demo/test/CMakeFiles/test_demo.dir/build.make demo/test/CMakeFiles/test_demo.dir/threadsafe_stack_test.cpp.o
+	cd /home/chris/Documents/Code/Student_Manage_System/cmake-build-debug && $(MAKE) -f demo/test/CMakeFiles/test_demo.dir/build.make demo/test/CMakeFiles/test_demo.dir/threadsafe_stack_test.cpp.o
 .PHONY : threadsafe_stack_test.cpp.o
 
 threadsafe_stack_test.i: threadsafe_stack_test.cpp.i
@@ -356,7 +356,7 @@ threadsafe_stack_test.i: threadsafe_stack_test.cpp.i
 
 # target to preprocess a source file
 threadsafe_stack_test.cpp.i:
-	cd /Users/chris/Documents/MyGit/Student_Manage_System/cmake-build-debug && $(MAKE) -f demo/test/CMakeFiles/test_demo.dir/build.make demo/test/CMakeFiles/test_demo.dir/threadsafe_stack_test.cpp.i
+	cd /home/chris/Documents/Code/Student_Manage_System/cmake-build-debug && $(MAKE) -f demo/test/CMakeFiles/test_demo.dir/build.make demo/test/CMakeFiles/test_demo.dir/threadsafe_stack_test.cpp.i
 .PHONY : threadsafe_stack_test.cpp.i
 
 threadsafe_stack_test.s: threadsafe_stack_test.cpp.s
@@ -365,7 +365,7 @@ threadsafe_stack_test.s: threadsafe_stack_test.cpp.s
 
 # target to generate assembly for a file
 threadsafe_stack_test.cpp.s:
-	cd /Users/chris/Documents/MyGit/Student_Manage_System/cmake-build-debug && $(MAKE) -f demo/test/CMakeFiles/test_demo.dir/build.make demo/test/CMakeFiles/test_demo.dir/threadsafe_stack_test.cpp.s
+	cd /home/chris/Documents/Code/Student_Manage_System/cmake-build-debug && $(MAKE) -f demo/test/CMakeFiles/test_demo.dir/build.make demo/test/CMakeFiles/test_demo.dir/threadsafe_stack_test.cpp.s
 .PHONY : threadsafe_stack_test.cpp.s
 
 user_test.o: user_test.cpp.o
@@ -374,7 +374,7 @@ user_test.o: user_test.cpp.o
 
 # target to build an object file
 user_test.cpp.o:
-	cd /Users/chris/Documents/MyGit/Student_Manage_System/cmake-build-debug && $(MAKE) -f demo/test/CMakeFiles/test_demo.dir/build.make demo/test/CMakeFiles/test_demo.dir/user_test.cpp.o
+	cd /home/chris/Documents/Code/Student_Manage_System/cmake-build-debug && $(MAKE) -f demo/test/CMakeFiles/test_demo.dir/build.make demo/test/CMakeFiles/test_demo.dir/user_test.cpp.o
 .PHONY : user_test.cpp.o
 
 user_test.i: user_test.cpp.i
@@ -383,7 +383,7 @@ user_test.i: user_test.cpp.i
 
 # target to preprocess a source file
 user_test.cpp.i:
-	cd /Users/chris/Documents/MyGit/Student_Manage_System/cmake-build-debug && $(MAKE) -f demo/test/CMakeFiles/test_demo.dir/build.make demo/test/CMakeFiles/test_demo.dir/user_test.cpp.i
+	cd /home/chris/Documents/Code/Student_Manage_System/cmake-build-debug && $(MAKE) -f demo/test/CMakeFiles/test_demo.dir/build.make demo/test/CMakeFiles/test_demo.dir/user_test.cpp.i
 .PHONY : user_test.cpp.i
 
 user_test.s: user_test.cpp.s
@@ -392,7 +392,7 @@ user_test.s: user_test.cpp.s
 
 # target to generate assembly for a file
 user_test.cpp.s:
-	cd /Users/chris/Documents/MyGit/Student_Manage_System/cmake-build-debug && $(MAKE) -f demo/test/CMakeFiles/test_demo.dir/build.make demo/test/CMakeFiles/test_demo.dir/user_test.cpp.s
+	cd /home/chris/Documents/Code/Student_Manage_System/cmake-build-debug && $(MAKE) -f demo/test/CMakeFiles/test_demo.dir/build.make demo/test/CMakeFiles/test_demo.dir/user_test.cpp.s
 .PHONY : user_test.cpp.s
 
 # Help Target
@@ -445,6 +445,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /Users/chris/Documents/MyGit/Student_Manage_System/cmake-build-debug && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/chris/Documents/Code/Student_Manage_System/cmake-build-debug && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

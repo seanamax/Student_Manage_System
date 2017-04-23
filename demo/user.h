@@ -69,7 +69,7 @@ namespace NaiNa
 
         // 并发操作安全
         // 检查密码
-        bool check_passwd(const std::string& passwd) const;
+        bool check_passwd(const std::string& passwd);
 
         // 并发操作安全
         // 更新密码
@@ -77,15 +77,15 @@ namespace NaiNa
 
         // 并发操作安全
         // 获得账号
-        const std::string& id() const;
+        const std::string& id();
 
         // 并发操作安全
         // 检查用户等级
-        bool check_user_standard(const USER_STANDARD& user_standard) const;
+        bool check_user_standard(const USER_STANDARD& user_standard);
 
         // 并发操作安全
         // 返回用户等级
-        const USER_STANDARD user_standard() const;
+        const USER_STANDARD user_standard();
 
 
     private:

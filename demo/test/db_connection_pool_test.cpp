@@ -4,7 +4,7 @@
 
 #include "../db_connection_pool.h"
 #include "../db.h"
-#include "../../include/gtest.h"
+#include "../../include/gtest/gtest.h"
 
 using namespace NaiNa;
 using namespace std;
@@ -15,14 +15,15 @@ TEST(db_connection_pool_test, test_connection)
     string addr = "localhost";
     port_type port = 3306;
     string name = "root";
-    string passwd = "2718big.a";
+    string passwd = "root";
 
+    int connect_num = 20;
 
-    bool init_flag = db_connection_pool::instance()->init(_db, addr, port, name, passwd,2,200);
+    bool init_flag = db_connection_pool::instance()->init(_db, addr, port, name, passwd,2,connect_num);
     EXPECT_EQ(init_flag, true);
 
 
-    for(int i=0; i < 200; ++i) {
+    for(int i=0; i < connect_num; ++i) {
         unique_ptr<db> db_ptr = move(db_connection_pool::instance()->connection());
 
         auto res = db_ptr->query("SELECT * FROM Student");

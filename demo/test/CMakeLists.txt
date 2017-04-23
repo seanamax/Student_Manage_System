@@ -5,11 +5,16 @@ project(test_demo)
 
 
 include_directories(../../include)
-include_directories(/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/)
+#include_directories(/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/)
 link_directories(../../lib)
 
-INCLUDE_DIRECTORIES(/usr/local/mysql-5.7.17-macos10.12-x86_64/include)
-LINK_DIRECTORIES(/usr//local/mysql-5.7.17-macos10.12-x86_64/lib/)
+set(mysql_base_dir /usr/local/mysql)
+INCLUDE_DIRECTORIES(${mysql_base_dir}/include)
+LINK_DIRECTORIES(${mysql_base_dir}/lib)
+
+
+set(gnu_base_lib /usr/lib/x86_64-linux-gnu)
+link_directories(${gnu_base_lib})
 
 set(init_test test_init.cpp ../db_connection_pool.cpp ../db.cpp ../db_connection_guard.cpp)
 set(threadsafe_stack_test threadsafe_stack_test.cpp)
@@ -26,5 +31,6 @@ set(exec_target ${init_test} ${threadsafe_stack_test}
 add_executable(test_demo ${exec_target})
 
 target_link_libraries(test_demo libgtest.a libgtest_main.a)
-target_link_libraries(test_demo libmysqlclient.a)
+target_link_libraries(test_demo libmysqlclient.so)
+target_link_libraries(test_demo libpthread.so.0)
 

@@ -24,7 +24,7 @@ namespace NaiNa {
         db_addr_= "localhost";
         db_port_ = 3306;
         db_user_name_ = "root";
-        db_passwd_ = "2718big.a";
+        db_passwd_ = "root";
         //assert(false);
     }
 }
